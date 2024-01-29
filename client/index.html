@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anmeldung</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-purple-700">
+  <div class="flex justify-center items-center min-h-screen">
+    <div class="w-96 bg-gray-800 rounded-lg p-6">
+      <h1 class="text-4xl font-bold text-white text-center mb-6">Anmeldung</h1>
+      <form id="loginForm" class="flex flex-col space-y-4">
+        <div>
+          <label for="loginUsername" class="text-white">Benutzername:</label>
+          <input class="p-2 rounded bg-gray-300 text-black w-full" type="text" id="loginUsername" required>
+        </div>
+
+        <div>
+          <label for="loginPassword" class="text-white">Passwort:</label>
+          <input class="p-2 rounded bg-gray-300 text-black w-full" type="password" id="loginPassword" required>
+        </div>
+
+        <div class="flex flex-col space-y-2">
+          <button class="bg-blue-500 hover:bg-blue-800 text-white px-4 py-2 rounded" type="button" id="loginButton">Anmelden</button>
+          <button class="bg-blue-500 hover:bg-blue-800 text-white px-4 py-2 rounded" type="button" id="registerButton">Registrieren</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="client.ts"></script>
+</body>
+</html>
